@@ -77,11 +77,18 @@ public class Main {
                 result = sqrt(n1); // Only need n1
                 System.out.println("The square root is: " + result);
                 break;
+		   case 7:
+
+                System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                result = factorial(n1);
+                System.out.println("The factorial is: " + result);
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
     }
-            }while (operator !=7 );
+            }while (operator !=8 );
     }
 // Add two numbers
     static int add(int n1, int n2) {
@@ -107,6 +114,15 @@ public class Main {
     static double sqrt(int n1) {
         return Math.sqrt(n1); // just one number for square root
     }
+// Calculate the factorial of a number
+    static int factorial(int n1) {
+        int result = 1;
+        for (int i = 1; i <= n1; i++) {
+            result *= i;
+        }
+        return result;
+    }
 }
+
 
 
