@@ -32,8 +32,8 @@ public class Main {
                 result = add(n1, n2);
                 System.out.println("The sum is: " + result);
                 break;
-		  case 2:
 
+		  case 2:
                 System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
                 System.out.print("Enter the second number :");
@@ -41,6 +41,7 @@ public class Main {
                 result = subtract(n1, n2);
                 System.out.println("The difference is: " + result);
                 break;
+
 		  case 3:
 		    System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
@@ -49,6 +50,7 @@ public class Main {
                 result = multiply(n1, n2);
                 System.out.println("The product is: " + result);
                 break;
+
 		   case 4:
 		     System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
@@ -61,6 +63,7 @@ public class Main {
                     System.out.println("Error: Division by zero is not allowed.");
                 }
                 break;
+
 		  case 5:
 		  System.out.print("Enter the first number :");
                 n1 = sc.nextInt();
@@ -69,19 +72,24 @@ public class Main {
                 result = power(n1, n2);
                 System.out.println("The power is: " + result);
                 break;
+
 		    case 6:
 		   System.out.print("Enter the first number :");
                 n1 = sc.nextInt();
                 result = sqrt(n1); // Only need n1
                 System.out.println("The square root is: " + result);
                 break;
-		   case 7:
 
+		   case 7:
                 System.out.print("Enter the first number :");// Only one number
                 n1 = sc.nextInt();
                 result = factorial(n1);
                 System.out.println("The factorial is: " + result);
                 break;
+
+		   case 8:
+		System.out.print("Good bye  ^-^ !");
+		break;
                 default:
                 System.out.println("Entered number is not valid");
 
@@ -120,6 +128,7 @@ public class Main {
         }
         return result;
     }
+
 }
 
 
