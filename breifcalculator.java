@@ -19,11 +19,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         operator = sc.nextInt();
 
-            
-
-
-
-        switch (operator) {
+            switch (operator) {
             case 1:
                
                 System.out.print("Enter the first number :");
