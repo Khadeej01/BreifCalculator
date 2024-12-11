@@ -43,11 +43,19 @@ public class Main {
                 result = subtract(n1, n2);
                 System.out.println("The difference is: " + result);
                 break;
+		  case 3:
+		    System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                System.out.print("Enter the second number :");
+                n2 = sc.nextInt();
+                result = multiply(n1, n2);
+                System.out.println("The product is: " + result);
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
     }
-            }while (operator !=2 );
+            }while (operator !=3 );
     }
 // Add two numbers
     static int add(int n1, int n2) {
@@ -56,6 +64,10 @@ public class Main {
        // Subtract two numbers
     static int subtract(int n1, int n2) {
         return n1 - n2;
+    }
+       // Multiply two numbers
+    static int multiply(int n1, int n2) {
+        return n1 * n2;
     }
 }
 
