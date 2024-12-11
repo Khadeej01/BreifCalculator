@@ -63,6 +63,14 @@ public class Main {
                     System.out.println("Error: Division by zero is not allowed.");
                 }
                 break;
+		  case 5:
+		  System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                System.out.print("Enter the second number :");
+                n2 = sc.nextInt();
+                result = power(n1, n2);
+                System.out.println("The power is: " + result);
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
@@ -84,6 +92,10 @@ public class Main {
         // Divide two numbers
     static double divide(int n1, int n2) {
         return (double) n1 / n2; // Return a double for division
+    }
+       // Calculate power (n1 raised to the power of n2)
+    static double power(int n1, int n2) {
+        return Math.pow(n1, n2); // Using Math.pow for power calculation
     }
 }
 
