@@ -71,11 +71,17 @@ public class Main {
                 result = power(n1, n2);
                 System.out.println("The power is: " + result);
                 break;
+		    case 6:
+		   System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                result = sqrt(n1); // Only need n1
+                System.out.println("The square root is: " + result);
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
     }
-            }while (operator !=3 );
+            }while (operator !=7 );
     }
 // Add two numbers
     static int add(int n1, int n2) {
@@ -96,6 +102,10 @@ public class Main {
        // Calculate power (n1 raised to the power of n2)
     static double power(int n1, int n2) {
         return Math.pow(n1, n2); // Using Math.pow for power calculation
+    }
+      // Calculate the square root of a number
+    static double sqrt(int n1) {
+        return Math.sqrt(n1); // just one number for square root
     }
 }
 
