@@ -34,15 +34,28 @@ public class Main {
                 result = add(n1, n2);
                 System.out.println("The sum is: " + result);
                 break;
+		  case 2:
+
+                System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                System.out.print("Enter the second number :");
+                n2 = sc.nextInt();
+                result = subtract(n1, n2);
+                System.out.println("The difference is: " + result);
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
     }
-            }while (operator !=1 );
+            }while (operator !=2 );
     }
 // Add two numbers
     static int add(int n1, int n2) {
         return n1 + n2;
+	    }
+       // Subtract two numbers
+    static int subtract(int n1, int n2) {
+        return n1 - n2;
     }
 }
 
