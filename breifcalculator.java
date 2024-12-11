@@ -51,6 +51,18 @@ public class Main {
                 result = multiply(n1, n2);
                 System.out.println("The product is: " + result);
                 break;
+		   case 4:
+		     System.out.print("Enter the first number :");
+                n1 = sc.nextInt();
+                System.out.print("Enter the second number :");
+                n2 = sc.nextInt();
+                if (n2 != 0) {
+                    result = divide(n1, n2);
+                    System.out.println("The quotient is: " + result);
+                } else {
+                    System.out.println("Error: Division by zero is not allowed.");
+                }
+                break;
                 default:
                 System.out.println("Entered number is not valid");
 
@@ -69,5 +81,10 @@ public class Main {
     static int multiply(int n1, int n2) {
         return n1 * n2;
     }
+        // Divide two numbers
+    static double divide(int n1, int n2) {
+        return (double) n1 / n2; // Return a double for division
+    }
 }
+
 
