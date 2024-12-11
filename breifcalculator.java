@@ -113,7 +113,7 @@ public class Main {
         return (double) n1 / n2; // Return a double for division
     }
        // Calculate power (n1 raised to the power of n2)
-    static double power(int n1, int n2) {
+    static double power(int n1, int n2) { // n1 is the base 
         return Math.pow(n1, n2); // Using Math.pow for power calculation
     }
       // Calculate the square root of a number
