@@ -6,6 +6,8 @@ public class Main {
         System.out.println("____the menu of our calculator____");
         int operator, n1, n2;
         double result;
+	// Displaying the menu
+
            do{
          System.out.println("1: Add");
         System.out.println("2: Subtract");
@@ -22,7 +24,7 @@ public class Main {
             switch (operator) {
             case 1:
                
-                System.out.print("Enter the first number :");
+                System.out.print("Enter the first number :"); // Input from the user
                 n1 = sc.nextInt();
                 System.out.print("Enter the second number :");
                 n2 = sc.nextInt();
@@ -32,7 +34,7 @@ public class Main {
                 break;
 		  case 2:
 
-                System.out.print("Enter the first number :");
+                System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
                 System.out.print("Enter the second number :");
                 n2 = sc.nextInt();
@@ -40,7 +42,7 @@ public class Main {
                 System.out.println("The difference is: " + result);
                 break;
 		  case 3:
-		    System.out.print("Enter the first number :");
+		    System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
                 System.out.print("Enter the second number :");
                 n2 = sc.nextInt();
@@ -48,7 +50,7 @@ public class Main {
                 System.out.println("The product is: " + result);
                 break;
 		   case 4:
-		     System.out.print("Enter the first number :");
+		     System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
                 System.out.print("Enter the second number :");
                 n2 = sc.nextInt();
@@ -75,7 +77,7 @@ public class Main {
                 break;
 		   case 7:
 
-                System.out.print("Enter the first number :");
+                System.out.print("Enter the first number :");// Only one number
                 n1 = sc.nextInt();
                 result = factorial(n1);
                 System.out.println("The factorial is: " + result);
