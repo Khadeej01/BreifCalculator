@@ -54,7 +54,7 @@ public class Main {
 		   case 4:
 		     System.out.print("Enter the first number :");   // Input from the user
                 n1 = sc.nextInt();
-                System.out.print("Enter the second number :");
+                System.out.print("Enter the denominator :");
                 n2 = sc.nextInt();
                 if (n2 != 0) {
                     result = divide(n1, n2);
@@ -65,23 +65,23 @@ public class Main {
                 break;
 
 		  case 5:
-		  System.out.print("Enter the first number :");
+		  System.out.print("Enter the base  :");
                 n1 = sc.nextInt();
-                System.out.print("Enter the second number :");
+                System.out.print("Enter the second number :"); // la puissance
                 n2 = sc.nextInt();
                 result = power(n1, n2);
                 System.out.println("The power is: " + result);
                 break;
 
 		    case 6:
-		   System.out.print("Enter the first number :");
+		   System.out.print("Enter the number (base):");
                 n1 = sc.nextInt();
                 result = sqrt(n1); // Only need n1
                 System.out.println("The square root is: " + result);
                 break;
 
 		   case 7:
-                System.out.print("Enter the first number :");// Only one number
+                System.out.print("Enter the number :");// Only one number
                 n1 = sc.nextInt();
                 result = factorial(n1);
                 System.out.println("The factorial is: " + result);
